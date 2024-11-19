@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     /* Basic Options */
-    "target": "es2015", 
-    "module": "commonjs", 
-    "outDir": "./dist",   
-    "rootDir": "./src", 
-    "strict": true,
-    "incremental": true,
-    "tsBuildInfoFile": "./buildcache",
+    "target": "es2017",  // CAMBIO A 2017 PARA QUE ME ACEPTE EL OBJET ENTRIES - Especifica la versión de ECMAScript a la que se compilará el código. En este caso, se compilará a ES2015 (ES6).
+    "module": "commonjs",  // Define el sistema de módulos a usar. 'commonjs' es un sistema de módulos muy utilizado, especialmente en Node.js.
+    "outDir": "./dist",   // Define la carpeta de salida para los archivos compilados. En este caso, los archivos .js resultantes se guardarán en la carpeta 'dist'.
+    "rootDir": "./src",  // Define la carpeta raíz del proyecto, donde se encuentran los archivos fuente TypeScript. En este caso, está en la carpeta 'src'.
+    "strict": true,  // Activa todas las comprobaciones estrictas de TypeScript, ayudando a detectar posibles errores y hacer el código más seguro.
+    "incremental": true,  // Permite la compilación incremental, lo que significa que TypeScript solo recompilará los archivos que hayan cambiado, mejorando la velocidad de compilación.
+    "tsBuildInfoFile": "./buildcache"  // Especifica la ubicación donde se guardará la información de compilación incremental. TypeScript usa este archivo para mejorar la velocidad en futuras compilaciones.
   }
 }
