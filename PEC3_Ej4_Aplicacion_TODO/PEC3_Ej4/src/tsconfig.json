@@ -1,0 +1,14 @@
+{ //copio estructura del ejercicio 3
+    "compilerOptions": {
+        "target": "ES6",                         
+        "module": "commonjs",                    
+        "outDir": "../dist",                    
+        "rootDir": "../src",                         
+        "strict": true,                         
+        "esModuleInterop": true,
+        "incremental": true,  // Permite la compilación incremental, lo que significa que TypeScript solo recompilará los archivos que hayan cambiado, mejorando la velocidad de compilación.
+        "tsBuildInfoFile": "./buildcache"  // Especifica la ubicación donde se guardará la información de compilación incremental. TypeScript usa este archivo para mejorar la velocidad en futuras compilaciones. 
+    },
+    "include": ["**/*.ts"],                    
+    "exclude": ["node_modules", "../dist"]    
+}
